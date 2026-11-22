@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="118" onload="init(evt)" viewBox="0 0 1200 118" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="102" onload="init(evt)" viewBox="0 0 1200 102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -422,29 +422,21 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="118.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="102.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="101" > </text>
+<text id="details" x="10.00" y="85" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="101" > </text>
+<text id="matched" x="1090.00" y="85" > </text>
 <g id="frames">
 <g >
-<title>([kernel.kallsyms]) (125 samples, 4.88%)</title><rect x="1132.5" y="37" width="57.5" height="15.0" fill="rgb(229,110,26)" rx="2" ry="2" />
-<text  x="1135.45" y="47.5" >([kern..</text>
+<title>all (2,406,406,404 samples, 100%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="63.5" ></text>
 </g>
 <g >
-<title>all (2,563 samples, 100%)</title><rect x="10.0" y="69" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="79.5" ></text>
-</g>
-<g >
-<title>prog_o0 (2,563 samples, 100.00%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
-<text  x="13.00" y="63.5" >prog_o0</text>
-</g>
-<g >
-<title>(/home/asus/lab2/prog_o0) (2,438 samples, 95.12%)</title><rect x="10.0" y="37" width="1122.5" height="15.0" fill="rgb(248,200,48)" rx="2" ry="2" />
-<text  x="13.00" y="47.5" >(/home/asus/lab2/prog_o0)</text>
+<title>prog_o0 (2,406,406,404 samples, 100.00%)</title><rect x="10.0" y="37" width="1180.0" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
+<text  x="13.00" y="47.5" >prog_o0</text>
 </g>
 </g>
 </svg>
