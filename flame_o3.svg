@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="102" onload="init(evt)" viewBox="0 0 1200 102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="118" onload="init(evt)" viewBox="0 0 1200 118" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -422,21 +422,37 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="102.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="118.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="85" > </text>
+<text id="details" x="10.00" y="101" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="85" > </text>
+<text id="matched" x="1090.00" y="101" > </text>
 <g id="frames">
 <g >
-<title>prog_o3 (2,718,718,716 samples, 100.00%)</title><rect x="10.0" y="37" width="1180.0" height="15.0" fill="rgb(211,27,6)" rx="2" ry="2" />
-<text  x="13.00" y="47.5" >prog_o3</text>
+<title>main (44 samples, 1.68%)</title><rect x="1167.1" y="37" width="19.8" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="1170.07" y="47.5" ></text>
 </g>
 <g >
-<title>all (2,718,718,716 samples, 100%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="63.5" ></text>
+<title>all (2,625 samples, 100%)</title><rect x="10.0" y="69" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="79.5" ></text>
+</g>
+<g >
+<title>prog_o3 (2,625 samples, 100.00%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(211,27,6)" rx="2" ry="2" />
+<text  x="13.00" y="63.5" >prog_o3</text>
+</g>
+<g >
+<title>saxpy_accumulate(float const*, float const*, float, unsigned long) (7 samples, 0.27%)</title><rect x="1186.9" y="37" width="3.1" height="15.0" fill="rgb(223,85,20)" rx="2" ry="2" />
+<text  x="1189.85" y="47.5" ></text>
+</g>
+<g >
+<title>[unknown] (17 samples, 0.65%)</title><rect x="10.0" y="37" width="7.6" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="13.00" y="47.5" ></text>
+</g>
+<g >
+<title>hash_reduce(unsigned int const*, unsigned long) (2,557 samples, 97.41%)</title><rect x="17.6" y="37" width="1149.5" height="15.0" fill="rgb(236,143,34)" rx="2" ry="2" />
+<text  x="20.64" y="47.5" >hash_reduce(unsigned int const*, unsigned long)</text>
 </g>
 </g>
 </svg>

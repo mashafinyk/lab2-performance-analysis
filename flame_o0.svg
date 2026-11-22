@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="102" onload="init(evt)" viewBox="0 0 1200 102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="118" onload="init(evt)" viewBox="0 0 1200 118" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -422,21 +422,61 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="102.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="118.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="85" > </text>
+<text id="details" x="10.00" y="101" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="85" > </text>
+<text id="matched" x="1090.00" y="101" > </text>
 <g id="frames">
 <g >
-<title>all (2,406,406,404 samples, 100%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="63.5" ></text>
+<title>main (149 samples, 5.85%)</title><rect x="698.3" y="37" width="69.0" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="701.26" y="47.5" >main</text>
 </g>
 <g >
-<title>prog_o0 (2,406,406,404 samples, 100.00%)</title><rect x="10.0" y="37" width="1180.0" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
-<text  x="13.00" y="47.5" >prog_o0</text>
+<title>[unknown] (1 samples, 0.04%)</title><rect x="10.0" y="37" width="0.5" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="13.00" y="47.5" ></text>
+</g>
+<g >
+<title>void std::__fill_a1&lt;unsigned int*, unsigned int&gt;(unsigned int*, unsigned int*, unsigned int const&amp;) (31 samples, 1.22%)</title><rect x="1175.6" y="37" width="14.4" height="15.0" fill="rgb(254,228,54)" rx="2" ry="2" />
+<text  x="1178.63" y="47.5" ></text>
+</g>
+<g >
+<title>hash_reduce(unsigned int const*, unsigned long) (1,484 samples, 58.29%)</title><rect x="10.5" y="37" width="687.8" height="15.0" fill="rgb(236,143,34)" rx="2" ry="2" />
+<text  x="13.46" y="47.5" >hash_reduce(unsigned int const*, unsigned long)</text>
+</g>
+<g >
+<title>prog_o0 (2,546 samples, 100.00%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
+<text  x="13.00" y="63.5" >prog_o0</text>
+</g>
+<g >
+<title>std::vector&lt;float, std::allocator&lt;float&gt; &gt;::size() const (23 samples, 0.90%)</title><rect x="1121.4" y="37" width="10.7" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
+<text  x="1124.41" y="47.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;unsigned int, std::allocator&lt;unsigned int&gt; &gt;::operator[](unsigned long) (10 samples, 0.39%)</title><rect x="1132.1" y="37" width="4.6" height="15.0" fill="rgb(206,5,1)" rx="2" ry="2" />
+<text  x="1135.07" y="47.5" ></text>
+</g>
+<g >
+<title>all (2,546 samples, 100%)</title><rect x="10.0" y="69" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="79.5" ></text>
+</g>
+<g >
+<title>void std::__fill_a1&lt;float*, float&gt;(float*, float*, float const&amp;) (67 samples, 2.63%)</title><rect x="1144.6" y="37" width="31.0" height="15.0" fill="rgb(241,166,39)" rx="2" ry="2" />
+<text  x="1147.58" y="47.5" >vo..</text>
+</g>
+<g >
+<title>saxpy_accumulate(float const*, float const*, float, unsigned long) (737 samples, 28.95%)</title><rect x="767.3" y="37" width="341.6" height="15.0" fill="rgb(223,85,20)" rx="2" ry="2" />
+<text  x="770.31" y="47.5" >saxpy_accumulate(float const*, float const*, f..</text>
+</g>
+<g >
+<title>std::vector&lt;float, std::allocator&lt;float&gt; &gt;::operator[](unsigned long) (27 samples, 1.06%)</title><rect x="1108.9" y="37" width="12.5" height="15.0" fill="rgb(220,73,17)" rx="2" ry="2" />
+<text  x="1111.89" y="47.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;unsigned int, std::allocator&lt;unsigned int&gt; &gt;::size() const (17 samples, 0.67%)</title><rect x="1136.7" y="37" width="7.9" height="15.0" fill="rgb(235,139,33)" rx="2" ry="2" />
+<text  x="1139.70" y="47.5" ></text>
 </g>
 </g>
 </svg>
